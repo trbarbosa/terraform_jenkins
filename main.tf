@@ -17,7 +17,7 @@ resource "azurerm_virtual_network" "vnet-2-mudado" {
   address_space       = ["10.0.0.0/16"]
 }
 
-moved {
-  from = azurerm_virtual_network.vnet2
-  to   = azurerm_virtual_network.vnet2-mudado
-}
+#moved {
+#  from = azurerm_virtual_network.vnet-2
+#  to   = azurerm_virtual_network.vnet-2-mudado
+#}
