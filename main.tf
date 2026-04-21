@@ -9,3 +9,10 @@ resource "azurerm_virtual_network" "vnet-jenkins" {
   location            = azurerm_resource_group.rg-jenkins.location
   address_space       = ["10.0.0.0/16"]
 }
+
+resource "azurerm_virtual_network" "vnet-j2" {
+  name                = "VNET-2"
+  resource_group_name = azurerm_resource_group.rg-jenkins.name
+  location            = azurerm_resource_group.rg-jenkins.location
+  address_space       = ["10.0.1.0/16"]
+}
